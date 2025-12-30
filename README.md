@@ -15,9 +15,7 @@ Kiến trúc: Mô hình 3 lớp (3-Tier Architecture): GUI - BLL - DAL cùng v�
 
 3. Hướng dẫn cài đặt & Chạy ứng dụng
 Bước 1: Khởi tạo Database
-Mở file .sql trong thư mục Database.
-
-Nhấn Execute để tạo cấu trúc bảng và dữ liệu mẫu.
+Mở và excute file .sql trong thư mục Database.
 
 Bước 2: Cấu hình kết nối
 Tìm file DataProvider.cs trong lớp DAL.
@@ -28,7 +26,6 @@ Bước 3: Build & Run
 Nhấn F5 trong Visual Studio để biên dịch và chạy phần mềm.
 
 4. Tài khoản đăng nhập hệ thống
-Bạn có thể sử dụng các tài khoản mặc định sau để trải nghiệm các phân quyền khác nhau:
 
 Admin: tài khoản: admin / mật khẩu: 123.
 
