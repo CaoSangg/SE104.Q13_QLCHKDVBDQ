@@ -13,7 +13,8 @@ Cơ sở dữ liệu: SQL Server.
 
 Kiến trúc: Mô hình 3 lớp (3-Tier Architecture): GUI - BLL - DAL cùng với các DTO.
 
-3. Hướng dẫn cài đặt & Chạy ứng dụng
+3. Hướng dẫn cài đặt & chạy ứng dụng
+
 Bước 1: Khởi tạo Database
 Mở và excute file .sql trong thư mục Database.
 
