@@ -1,0 +1,72 @@
+﻿<Window x:Class="Project_QLVangBacDaQuy.GUI.Windows.WindowLogin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Đăng nhập hệ thống" Height="550" Width="900" 
+        WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None"
+        Background="White">
+
+    <Border CornerRadius="20" Background="{StaticResource MainBlack}" BorderBrush="#333333" BorderThickness="1">
+        <Border.Effect>
+            <DropShadowEffect BlurRadius="30" ShadowDepth="10" Opacity="0.8" Color="Black"/>
+        </Border.Effect>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1.1*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.Column="0" CornerRadius="20,0,0,20">
+                <Border.Background>
+                    <ImageBrush Stretch="UniformToFill" ImageSource="/Images/Login.jpg">
+                        <ImageBrush.Opacity>0.4</ImageBrush.Opacity>
+                    </ImageBrush>
+                </Border.Background>
+
+                <Grid>
+                    <Border Background="#10151B" Opacity="0.7" CornerRadius="20,0,0,20"/>
+
+                    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                        <Border Width="80" Height="80" BorderBrush="{StaticResource LuxuryGold}" BorderThickness="2" CornerRadius="50" Margin="0,0,0,20">
+                            <TextBlock Text="💎" FontSize="40" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+
+                        <TextBlock Text="JEWELRY" Foreground="{StaticResource LuxuryGold}" 
+                                   FontSize="32" FontWeight="Bold" HorizontalAlignment="Center"/>
+                        <TextBlock Text="MANAGEMENT SYSTEM" Foreground="{StaticResource TextWhite}" 
+                                   FontSize="14" FontWeight="Light" HorizontalAlignment="Center" Opacity="0.8"/>
+
+                        <Separator Width="50" Background="{StaticResource LuxuryGold}" Margin="0,20"/>
+                        <TextBlock Text="Tinh Hoa &amp; Đẳng Cấp" Foreground="#AAAAAA" FontStyle="Italic" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </Grid>
+            </Border>
+
+            <Grid Grid.Column="1">
+                <Button Content="✕" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="15"
+                        Background="Transparent" Foreground="Gray" BorderThickness="0" FontSize="16" Cursor="Hand"
+                        Click="btnExit_Click"/>
+
+                <StackPanel VerticalAlignment="Center" Margin="50,0">
+                    <TextBlock Text="ĐĂNG NHẬP" TextAlignment="Center" Foreground="{StaticResource TextWhite}" 
+                               FontSize="26" FontWeight="SemiBold" Margin="0,0,0,5"/>
+                    <TextBlock Text="Vui lòng nhập thông tin tài khoản" Foreground="Gray" FontSize="13" Margin="0,0,0,30"/>
+
+                    <TextBlock Text="TÀI KHOẢN" Foreground="{StaticResource LuxuryGold}" FontSize="11" FontWeight="Bold" Margin="0,0,0,5"/>
+                    <TextBox x:Name="txtUsername" Height="45" Margin="0,0,0,20"/>
+
+                    <TextBlock Text="MẬT KHẨU" Foreground="{StaticResource LuxuryGold}" FontSize="11" FontWeight="Bold" Margin="0,0,0,5"/>
+                    <PasswordBox x:Name="txtPassword" Height="45" Margin="0,0,0,30"/>
+
+                    <Button x:Name="btnLogin" Content="Truy Cập Hệ Thống" 
+                            Style="{StaticResource GoldButton}" Height="50" Margin="0,0,0,15"
+                            Click="btnLogin_Click"/>
+
+                    <Button x:Name="btnExit" Content="Thoát" 
+                            Style="{StaticResource OutlineButton}" Height="45"
+                            Click="btnExit_Click"/>
+                </StackPanel>
+            </Grid>
+        </Grid>
+    </Border>
+</Window>
